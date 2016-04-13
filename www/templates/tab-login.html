@@ -1,0 +1,52 @@
+<ion-view view-title="登陆">
+  <ion-content class="padding">
+    <div class="row padding-top" align-title="center">
+  				<div class="col" align="center">
+  					<img src="../../images/picture/index/192.png" width="35%">
+  				</div>
+  			</div>
+
+  			<div class="list list-inset">
+  				<!--<form name="myForm" novalidate>-->
+  					<div class="row">
+  						<div class="col">
+  							<label class="item item-input">
+  								<span class="input-label" style="width:50px">手机号</span>
+  								<input type="text" placeholder="{{login_cellphone_palcehoder}}" ng-model="formData.username"><!--phonevalid errormsg="{{vaildate_tip_1}}" required="required" -->
+  							</label>
+  						</div>
+  					</div>
+  					<div class="row">
+  						<div class="col">
+  							<label class="item item-input item-icon-right">
+  								<span class="input-label" style="width:50px;">密码</span>
+  								<input type="password" id="password" placeholder="{{login_password_palcehoder}}" ng-model="formData.password"><!--passwordvalid errormsg="{{vaildate_tip_3}}" required="required" -->
+  								<i class="icon ion-eye-disabled" id="eye" on-tap="lookPwd()"></i>
+  							</label>
+  						</div>
+  					</div>
+  					<!-- <div class="row">
+  						<label class="checkbox  col-center">
+  							<input type="checkbox" id="autoLogin" ng-model="formData.autoLogin">
+  						</label>
+  						<div class="col col-center" align-title="center">
+  							<h5>{{auto_load_txt}}</h5>
+  						</div>
+  						<label class="checkbox  col-center">
+  							<input type="checkbox" id="remberPwd" ng-model="formData.remberPwd">
+  						</label>
+  						<div class="col col-center">
+  							<h5>{{remember_passwords_txt}}</h5>
+  						</div>
+  					</div><ng-disabled="myForm.$invalid"-->
+  					<button class="button button-full button-assertive" fullbtn style="border-radius: 8px;" ng-click="login()">登陆</button>
+  					<div class="row">
+  						<div class="col">
+  							<a align-title="left" href="../userRegister/register.html" style="color: #666666">忘记密码</a>
+  							<a align-title="right" href="../forgetpassword/forgetpassword.html" style="float: right;color:#666666;width: 11em;text-align: right;" href="javascript:;">找回密码</a>
+  						</div>
+  					</div>
+  				<!--</form>-->
+  			</div>
+  </ion-content>
+</ion-view>

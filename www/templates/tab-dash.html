@@ -1,0 +1,17 @@
+<ion-view view-title="主页">
+
+  <ion-nav-buttons side="right">
+        <button class="button" ng-click="gotoLogin()">
+          登陆
+        </button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+    <ion-list>
+			<ion-item ng-repeat="item in items">
+			{{item}}
+			<ion-option-button class="button-calm icon ion-edit"></ion-option-button>
+			<ion-option-button class="button-energized icon ion-share"></ion-option-button>
+			</ion-item>
+		</ion-list>
+  </ion-content>
+</ion-view>

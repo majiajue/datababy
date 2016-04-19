@@ -7,8 +7,8 @@
   </ion-nav-buttons>
   <ion-content class="padding">
     <ion-list>
-			<ion-item ng-repeat="item in items">
-			{{item}}
+			<ion-item ng-repeat="item in items" type="item-text-wrap" href="#/tab/dash/{{item.bjid}}">
+			{{item.njname}}{{item.bjname}}
 			<ion-option-button class="button-calm icon ion-edit"></ion-option-button>
 			<ion-option-button class="button-energized icon ion-share"></ion-option-button>
 			</ion-item>

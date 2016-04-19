@@ -62,6 +62,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.class', {
+    cache: false,
+    url: '/dash/:classId',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/tab-class.html',
+        controller: 'ClassCtrl'
+      }
+    }
+  })
+
   .state('tab.chats', {
     cache: false,
       url: '/chats',
